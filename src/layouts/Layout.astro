@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Sabiduría Criolla - IA + Música + Streaming | Auditorio Oeste</title>
+		<meta name="description" content="Descubre el futuro de la música con Inteligencia Artificial. Streaming semanal, talleres presenciales y contenido exclusivo con estilo criollo." />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	html {
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+		line-height: 1.6;
+		color: #DEB887;
+		background: #654321;
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* Custom scrollbar */
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+	
+	::-webkit-scrollbar-track {
+		background: #654321;
+	}
+	
+	::-webkit-scrollbar-thumb {
+		background: #CD853F;
+		border-radius: 6px;
+		border: 2px solid #654321;
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+		background: #DEB887;
+	}
+	
+	/* Smooth animations */
+	* {
+		transition: all 0.3s ease;
+	}
+	
+	/* Focus styles */
+	button:focus,
+	a:focus {
+		outline: 3px solid #CD853F;
+		outline-offset: 2px;
+	}
+
+	/* Typography */
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Cinzel', serif;
+	}
+
+	/* Selection styles */
+	::selection {
+		background: #CD853F;
+		color: #654321;
+	}
+
+	::-moz-selection {
+		background: #CD853F;
+		color: #654321;
+	}
+</style>
